@@ -7,6 +7,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
 import NonRestoring
+import Restoring
 
 
 main =
@@ -70,4 +71,5 @@ view model =
             ]
          ]
             ++ NonRestoring.view model.a model.b model.bits
+            ++ Restoring.view model.a model.b model.bits
         )
